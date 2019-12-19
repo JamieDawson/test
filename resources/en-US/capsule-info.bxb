@@ -1,0 +1,11 @@
+capsule-info {
+  display-name (Try OAuth)
+  developer-name (Viv)
+  icon-asset (images/icons/icon.png)
+  description ("A Capsule to teach people how to use OAuth with the Spotify API.")
+  search-keywords {
+    keyword (spotify)
+  }
+  dispatch-name (Try OAuth)
+  
+}

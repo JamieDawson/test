@@ -1,0 +1,23 @@
+result-view {
+  match { Tracks (tracks) }
+  render {
+    layout {
+      section {
+        content {
+          paragraph {
+            style (Title_M)
+            value("Track IDs: #{value(tracks.trackIDs)}") //display Track ID
+          }
+          paragraph {
+            style (Title_M)
+            value("Names: #{value(tracks.trackNames)}") //Display Track name
+          }
+          paragraph {
+            style (Title_M)
+            value("Tempos: #{value(tracks.tempos)}") //Display track tempos.
+          }
+        }
+      }
+    }
+  }
+}

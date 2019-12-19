@@ -1,0 +1,19 @@
+endpoints {
+  // authorization{
+  //   oauth{
+  //     provider(Spotify)
+  //     grant-type (authorization_code)
+  //     authorize-endpoint (https://accounts.spotify.com/authorize)
+  //     client-id () //PUT CLIENT ID HERE
+  //     client-secret () //PUT SECRET ID HERE
+  //     scope (user-read-playback-state)
+  //     token-endpoint (https://accounts.spotify.com/api/token)
+  //   }
+  // }
+    action-endpoints {
+      action-endpoint (RandomQuery) {
+        accepted-inputs (numberOfSongs, requestedTempo)
+        local-endpoint (RandomQuery.js)
+    }
+  }
+}
