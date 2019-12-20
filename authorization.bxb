@@ -1,15 +1,7 @@
 authorization {
-    global {
-      oauth2-client-credentials (Spotify) {
-        client-id (1d8852e910894957a7e378f081da58af)
-        client-secret-key (2fd8394fa0054ab0bb6f0bd775c8567e)
-        scope (user-read-playback-state)
-        token-endpoint (https://accounts.spotify.com/api/token)
-      }
-    }
     user {
       oauth2-authorization-code (Spotify) {
-        authorize-endpoint (http://1f5dcb21.ngrok.io/)
+        authorize-endpoint (https://accounts.spotify.com/authorize)
         client-id (1d8852e910894957a7e378f081da58af)
         client-secret-key (2fd8394fa0054ab0bb6f0bd775c8567e)
         scope (user-read-playback-state)
@@ -17,6 +9,10 @@ authorization {
       }
     }
   }
+
+  //user = signed in
+  //gloabal = not signed in info.
+  //
 
 //The old way we use to use oauth.
   // authorization{
