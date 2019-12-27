@@ -86,7 +86,9 @@ module.exports.function = function randomNameQuery (numberOfSongs, requestedTemp
     return (tempos)
   }
 
+  console.log("hieee")
   var data = querySpotify()
+  console.log(data)
   var trackNames, trackIDs, images
   [trackIDs, trackNames, images] = getGeneralTrackInfo(data)
   var trackDetails = getDetailedTrackInfo(trackIDs.join()) //makes one string delimted by commas. 
