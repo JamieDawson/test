@@ -1,0 +1,24 @@
+result-view {
+  match { Tracks (track) }
+  render {
+     list-of (track) { 
+      where-each (item) {
+        cell-area { 
+          slot1 {
+            image {
+              url ("#{value(item.trackAlbumImage)}")
+              shape (Square)
+            }
+          }
+          slot2 {
+            content {
+              order (PrimarySecondary)
+              primary ("#{value(item.trackNames)}")
+              secondary ("Tempo: #{value(item.tempos)}")
+            }
+          }
+        }
+      }
+    }
+  }
+}

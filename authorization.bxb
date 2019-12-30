@@ -2,8 +2,8 @@ authorization {
     user {
       oauth2-authorization-code (Spotify) {
         authorize-endpoint (https://accounts.spotify.com/authorize)
-        client-id (1d8852e910894957a7e378f081da58af)
-        client-secret-key (2fd8394fa0054ab0bb6f0bd775c8567e)
+        client-id (e9595974b8a74f0f8012dbe69d308661)
+        client-secret-key (secret)
         scope (user-read-playback-state)
         token-endpoint (https://accounts.spotify.com/api/token)
       }
