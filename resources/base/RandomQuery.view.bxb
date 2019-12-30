@@ -4,18 +4,15 @@ result-view {
     layout {
       section {
         content {
-          paragraph {
+          paragraph{
             style (Title_M)
-            value("Track IDs: #{value(tracks.trackIDs)}") //display Track ID
+            value("Oauth Works! Here is your track name:") 
           }
           paragraph {
             style (Title_M)
-            value("Names: #{value(tracks.trackNames)}") //Display Track name
+            value("Name: #{value(tracks.trackNames)}") //Display Track name
           }
-          paragraph {
-            style (Title_M)
-            value("Tempos: #{value(tracks.tempos)}") //Display track tempos.
-          }
+
         }
       }
     }
